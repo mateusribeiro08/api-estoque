@@ -14,5 +14,9 @@ router.use('/', purchaseItemRouter);
 router.use('/', saleRouter);
 router.use('/', saleItemRouter);
 
+router.get('/', function (req, res) {
+  res.status(200).json({msg: "Bem vindo a API!!!"})
+})
+
 
 module.exports = router;
